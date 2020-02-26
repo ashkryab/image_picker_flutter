@@ -96,8 +96,8 @@ class AssetDataImage extends ImageProvider<AssetDataImage> {
       Utils.log("w：$w,h：$h");
       return await decode(
         bytes,
-        cacheWidth: w,
-        cacheHeight: h,
+        cacheWidth: targetWidth,
+        cacheHeight: targetHeight,
       );
     }
   }
